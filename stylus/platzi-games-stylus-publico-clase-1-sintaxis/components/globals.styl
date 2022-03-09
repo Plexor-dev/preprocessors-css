@@ -1,0 +1,42 @@
+Fuente1 = 'Lato', sans-serif
+Fuente2 = 'Oswald', sans-serif
+color-primary = #333333
+color-secondary = #8841da
+color-light = #ffffff
+
+contenedor()
+    display: flex
+    width: 96%
+    margin: 5px
+    padding: 30px 0
+    flex-wrap: wrap
+    gap: 5px
+
+caja-sombra()
+    background-color: color-light
+    box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.3)
+    margin-bottom: 20px
+
+opacidad(color, cantidad)
+    alpha(color, cantidad)
+
+for header in 3 2 1
+    h{header}
+        font-size: 35px - (5*header)
+        margin: 0
+
+titulos(fuente)
+    if fuente == Fuente1
+        font-family: Fuente1
+    else
+        font-family: Fuente2
+        font-weight: 600
+        text-transform uppercase
+
+*
+    margin: 0
+    box-sizing: border-box
+
+body
+    color color-primary
+    titulos(Fuente1)

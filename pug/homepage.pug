@@ -1,0 +1,15 @@
+extend componentes/plantilla.pug 
+block contenidos
+    section.container
+      aside.left
+        h2 menu
+        ul
+          each enlace in enlaces
+            li=enlace
+      article.right
+        h2 #{titulos[0]}
+        p.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas neque id facilis libero eligendi illo iusto? Ullam, consequatur ipsum tempora dolorem harum qui, magnam voluptatibus molestiae suscipit ad alias? Obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate unde in magnam debitis enim ex eum eligendi, pariatur omnis et dolorem possimus vero a fugit id, dolore voluptate error.
+        p.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas neque id facilis libero eligendi illo iusto? Ullam, consequatur ipsum tempora dolorem harum qui, magnam voluptatibus molestiae suscipit ad alias? Obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate unde in magnam debitis enim ex eum eligendi, pariatur omnis et dolorem possimus vero a fugit id, dolore voluptate error.
+        a.boton ver más

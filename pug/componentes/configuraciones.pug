@@ -1,0 +1,10 @@
+-var titulos = ["Titulo 1", "Subtitulo 1", "Subtitulo 2", "subtitulo 3"]
+-var contenido1 = "contenido de la pagina card"
+-var usuario = "Dario"
+-var enlaces=['Acerca', 'Noticias', 'Contacto']
+mixin caja(imagen, titulo, contenido)
+    .caja 
+        .caja__imagen: img(src="/images/"+imagen)
+        .caja__contenido 
+            h3=titulo
+            p=contenido

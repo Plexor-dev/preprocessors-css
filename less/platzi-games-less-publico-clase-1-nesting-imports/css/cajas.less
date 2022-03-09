@@ -1,0 +1,46 @@
+.contenedor--cajas {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    //border-radius: 20px;
+}
+
+.caja {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border-radius: 40px;
+    max-width: 430px;
+    .sombra-caja;
+    &__imagen {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 40px 40px 0 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__contenido {
+        padding: 25px;
+        //background-color: @color-claro;
+    }
+    span{
+        color: @color-secundario;
+        .oswald;
+    }
+    a {
+        cursor: pointer;
+        color: @color-variacion;
+        .oswald;
+    }
+}
